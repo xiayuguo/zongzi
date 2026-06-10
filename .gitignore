@@ -1,0 +1,9 @@
+node_modules
+dist
+.DS_Store
+*.local
+.vite
+
+# 备份/临时
+_legacy_index.html.bak
+vite.config.ts.timestamp-*.mjs
