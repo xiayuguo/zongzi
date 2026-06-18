@@ -54,6 +54,13 @@ export class ZongziGame {
     this.showBest();
   }
 
+  private shuffleControls(): void {
+    const wrap = el('controls');
+    const btns = [...wrap.children];
+    btns.sort(() => Math.random() - 0.5);
+    btns.forEach((b) => wrap.appendChild(b));
+  }
+
   private renderSeq(): void {
     const seq = el('seq');
     seq.innerHTML = '';
@@ -137,6 +144,7 @@ export class ZongziGame {
       if (!this.playing) return;
       z.textContent = ZONGZI_WIP;
       this.step = 0;
+      this.shuffleControls();
       this.renderSeq();
     }, 260);
   }
