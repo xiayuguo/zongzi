@@ -15,7 +15,7 @@ export const STEPS: Step[] = [
   { id: 4, ic: '🧵', lb: '捆线' },
 ];
 
-export const ZONGZI_DONE = '🥟';
+export const ZONGZI_DONE = '🫔';
 export const ZONGZI_WIP = '🫔';
 
 /** 游戏时长（秒） */
